@@ -4,14 +4,11 @@ import sys
 
 def run_tracker(filename, model):
     """
-    This function is designed to run a video file or webcam stream
-    concurrently with the YOLOv8 model, utilizing threading.
-
+    This function is designed to run a yolo algorithm over a video file
+    or a webcam.
     - filename: The path to the video file or the webcam/external
     camera source.
     - model: The file path to the YOLOv8 model.
-    - file_index: An argument to specify the count of the
-    file being processed.
     """
 
     video = cv2.VideoCapture(filename)  # Read the video file
